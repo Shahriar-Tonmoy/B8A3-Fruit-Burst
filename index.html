@@ -33,15 +33,15 @@
   </style>
 </head>
 <body class="font-lato">
-  <header class=" lg:pt-12 border">
+  <header class="container mx-auto lg:pt-12 ">
     <nav class="">
-      <div class="flex flex-row-reverse  lg:flex-row  navbar bg-base-100 lg:bg-primary-color lg:rounded-full lg:px-12 py-6 ">
-        <div class="navbar-start flex justify-end lg:justify-start border">
-          <div class="dropdown">
+      <div class="flex justify-between lg:flex-row md:justify-evenly navbar bg-base-100 lg:bg-primary-color lg:rounded-full lg:px-12 py-6">
+        <div class="navbar-start justify-end lg:justify-start  order-last lg:-order-last">
+          <div class="dropdown relative">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <i class="fa-solid fa-bars"></i>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="flex flex-col items-center menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-0 top-full">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -57,9 +57,9 @@
             </ul>
           </div>
         </div>
-        <div class="border">
+        <div class="flex justify-center gap-2">
           <img src="images/logo.png" alt="" class="w-7 lg:w-auto">
-        <a class="btn btn-ghost lg:text-white text-2xl lg:text-4xl font-bold ">Fruit Burst</a>
+          <a class="btn btn-ghost text-[#121212] lg:text-white text-2xl lg:text-4xl font-bold p-0">Fruit Burst</a>
         </div>  
         <div class="navbar-end hidden lg:inline-flex relative">
           <div class="form-control flex w-96">
@@ -71,10 +71,8 @@
         </div>
       </div>
     </nav>
-
   </header>
   <main>
-
   </main>
   <footer>
 
