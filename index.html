@@ -33,9 +33,10 @@
   </style>
 </head>
 <body class="font-lato">
-  <header class="container mx-auto lg:pt-12 ">
+  <header class="container mx-auto lg:pt-12">
+    <!-- Nav-bar Section -->
     <nav class="">
-      <div class="flex justify-between lg:flex-row md:justify-evenly navbar bg-base-100 lg:bg-primary-color lg:rounded-full lg:px-12 py-6">
+      <div class="flex justify-between lg:flex-row md:justify-between navbar bg-base-100 lg:bg-primary-color lg:rounded-full lg:px-12 py-6">
         <div class="navbar-start justify-end lg:justify-start  order-last lg:-order-last">
           <div class="dropdown relative">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -63,7 +64,7 @@
         </div>  
         <div class="navbar-end hidden lg:inline-flex relative">
           <div class="form-control flex w-96">
-            <input type="text" placeholder="Search" class="input w-24 md:w-auto rounded-full hidden lg:inline-flex " />
+            <input type="text" placeholder="Search here" class="input w-24 md:w-auto rounded-full hidden lg:inline-flex placeholder:text-[#12121266] placeholder:text-base placeholder:font-normal" />
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="absolute right-3">
             <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -71,6 +72,73 @@
         </div>
       </div>
     </nav>
+    <!-- Banner Section -->
+    <section class=" mt-12 px-3 lg:px-0 relative ">
+      <div class="carousel w-full bg-black rounded-lg flex">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/banner1.png" class="w-full opacity-60" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 top-1/2 left-1 right-1 z-20">
+            <a href="#slide4" class="btn btn-circle border-none bg-black text-white">❮</a> 
+            <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full opacity-60" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 top-1/2 left-1 right-1 z-20">
+            <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❮</a> 
+            <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full opacity-60">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 top-1/2 left-1 right-1 z-30">
+            <a href="#slide2" class="btn btn-circle border-none bg-black text-white z-30">❮</a> 
+            <a href="#slide4" class="btn btn-circle border-none bg-black text-white z-30">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full opacity-60">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 top-1/2 left-1 right-1 z-40">
+            <a href="#slide3" class="btn btn-circle border-none bg-black text-white z-40">❮</a> 
+            <a href="#slide1" class="btn btn-circle border-none bg-black text-white z-40">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-2 lg:bottom-[40%]  text-center w-2/3 lg:left-[10%] left-20 lg:w-[80%] z-10  mx-auto md:w-full md:left-0 md:bottom-[16%]">
+        <h1 class="mb-1 lg:mb-5 text-white text-xl font-medium lg:text-7xl lg:font-extrabold md:text-6xl md:font-extrabold">Exotic tastes at your <br> doorstep</h1>
+        <p class="mb-1 lg:mb-5 text-base font-light lg:text-xl lg:font-medium text-white md:text-lg md:font-normal">We supply highly quality organic products</p>
+        <button class="btn btn-primary text-white text-xs font-normal lg:text-lg lg:font-extrabold bg-primary-color border-none lg:w-[154px] lg:h-[64px] h-2">Shop Now</button>
+      </div>
+      <!-- <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-none">
+          <h1 class="mb-5 text-white text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+          <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic products</p>
+          <button class="btn btn-primary text-white text-xl font-extrabold bg-primary-color border-none px-7">Shop Now</button>
+        </div>
+      </div> -->
+      <div class="lg:flex justify-around w-4/5 h-[250px]  absolute left-36 -bottom-20 bg-white rounded-lg shadow-lg hidden">
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/fruit1.png" alt="">
+          <p class="text-black text-xl font-medium">Grape</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/fruit2.png" alt="">
+          <p class="text-black text-xl font-medium">Orange</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/fruit3.png" alt="">
+          <p class="text-black text-xl font-medium">Mango</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/fruit4.png" alt="">
+          <p class="text-black text-xl font-medium">Strawberry</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/fruit5.png" alt="">
+          <p class="text-black text-xl font-medium">Pomegranate</p>
+        </div>
+      </div>
+    </section>
   </header>
   <main>
   </main>
